@@ -1,0 +1,39 @@
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #2c3e50; /* Dark background */
+    color: white;
+    text-align: center;
+    flex-direction: column;
+  }
+  
+  .profile-img-container {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  
+  .welcome-message h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .welcome-message p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
