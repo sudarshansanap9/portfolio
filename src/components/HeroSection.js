@@ -13,7 +13,7 @@ const HeroSection = () => {
       >
         <div className="profile-img-container">
           <img
-            src="/assets/sudarshan.png" // Path to your image
+            src="./assets/sudarshan.png" // Path to your image
             alt="Profile"
             className="profile-img"
           />
