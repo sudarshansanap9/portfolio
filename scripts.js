@@ -8,10 +8,10 @@ const scriptName = process.argv[2];
 
 // Define our scripts
 const scripts = {
-  'dev': 'vite',
-  'build': 'vite build',
-  'build:dev': 'vite build --mode development',
-  'preview': 'vite preview'
+  'dev': 'node ./node_modules/vite/bin/vite.js',
+  'build': 'node ./node_modules/vite/bin/vite.js build',
+  'build:dev': 'node ./node_modules/vite/bin/vite.js build --mode development',
+  'preview': 'node ./node_modules/vite/bin/vite.js preview'
 };
 
 // Check if the script exists
