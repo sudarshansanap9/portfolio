@@ -1,3 +1,4 @@
+
 .hero-container {
     display: flex;
     justify-content: center;
@@ -37,3 +38,18 @@
     margin-top: 10px;
   }
   
+  .download-resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .download-resume-btn:hover {
+    background-color: #2980b9;
+  }

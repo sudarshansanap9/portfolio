@@ -23,13 +23,21 @@ const HeroSection = () => {
             className="profile-img"
             onError={(e) => {
               console.error("Image failed to load");
+              e.target.onerror = null; // Prevent infinite loop
               e.target.src = `${baseUrl}/assets/profile-fallback.png`; // Fallback image
             }}
           />
         </div>
         <div className="welcome-message">
-          <h1>Hi, I'm [Your Name]</h1>
-          <p>A passionate [Your Role] with a love for building innovative solutions.</p>
+          <h1>Hi, I'm Sudarshan Sanap</h1>
+          <p>A passionate Web Developer with a love for building innovative solutions.</p>
+          <a 
+            href={`${baseUrl}/assets/resume.png`} 
+            download="Sudarshan_Sanap_Resume.png"
+            className="download-resume-btn"
+          >
+            Download Resume
+          </a>
         </div>
       </motion.div>
     </div>
