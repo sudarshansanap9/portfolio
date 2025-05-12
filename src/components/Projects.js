@@ -7,7 +7,7 @@ const Projects = () => {
       title: 'Project 1',
       description: 'Description of project 1.',
       techStack: ['React', 'Node.js'],
-      image: '/assets/project1.jpg'
+      image: './assets/sudarshan.png'
     },
     // Add more projects as needed
   ];
