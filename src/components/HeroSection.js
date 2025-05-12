@@ -1,8 +1,13 @@
+
 import React from 'react';
 import './HeroSection.css';
 import { motion } from 'framer-motion';
 
 const HeroSection = () => {
+  // Get the base URL from the environment or default to empty string
+  // This helps with GitHub Pages deployment where the site is in a subdirectory
+  const baseUrl = process.env.PUBLIC_URL || '';
+
   return (
     <div className="hero-container">
       <motion.div
@@ -13,9 +18,13 @@ const HeroSection = () => {
       >
         <div className="profile-img-container">
           <img
-            src="./assets/sudarshan.png" // Path to your image
+            src={`${baseUrl}/assets/sudarshan.png`}
             alt="Profile"
             className="profile-img"
+            onError={(e) => {
+              console.error("Image failed to load");
+              e.target.src = `${baseUrl}/assets/profile-fallback.png`; // Fallback image
+            }}
           />
         </div>
         <div className="welcome-message">
